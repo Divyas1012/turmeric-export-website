@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configure wholesale export orders for premium Turmeric Fingers, Turmeric Powder, and Organic Turmeric products. Request custom FOB/CIF quotes from Golden Canopy Agritech.">
+  <title>Wholesale Export Order Configurator | Golden Canopy Agritech</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="order-page-body">
+
+  <!-- Navigation Bar -->
+  <header class="header scrolled"> <!-- Kept scrolled by default on order page for contrast -->
+    <div class="nav-container">
+      <a href="index.html#home" class="logo">
+        <span class="logo-leaf"><i class="fa-solid fa-leaf"></i></span>
+        <span class="logo-text">GOLDEN<span>CANOPY</span></span>
+      </a>
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="index.html#certification" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="order.html" class="nav-link active">Order Page</a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Main Title Area -->
+  <section class="order-hero-banner">
+    <div class="container text-center">
+      <span class="section-tag">Wholesale Ordering Workspace</span>
+      <h1 class="order-hero-title">Bulk Export Configurator</h1>
+      <p class="order-hero-desc">Configure your grade details, shipment volume, and freight terms. We provide live quote estimations in Indian Rupees (INR / ₹) for port clearances.</p>
+    </div>
+  </section>
+
+  <!-- Order Workspace Configurator Section -->
+  <section class="order-workspace-section">
+    <div class="container">
+      
+      <!-- Order / Configurator Wrapper -->
+      <div class="order-workspace-card" id="order-workspace-card">
+        
+        <!-- Form input State (active configuration) -->
+        <div id="order-form-state">
+          <div class="order-split-grid">
+            
+            <!-- Left Panel: Configurator details -->
+            <div class="order-config-panel">
+              <h3 class="panel-subtitle"><i class="fa-solid fa-sliders"></i> 1. Configure Shipment</h3>
+              
+              <div class="order-group">
+                <label for="order-product-select">Select Turmeric Grade</label>
+                <select id="order-product-select" class="form-control-order">
+                  <option value="fingers" data-price="115000" data-min="10">Turmeric Fingers - ₹1,15,000/MT</option>
+                  <option value="powder" data-price="140000" data-min="5">Turmeric Powder - ₹1,40,000/MT</option>
+                  <option value="organic" data-price="205000" data-min="2">Organic Turmeric Powder - ₹2,05,000/MT</option>
+                </select>
+              </div>
+              
+              <!-- Product spec card update preview -->
+              <div class="product-preview-specs-box" id="product-preview-specs-box">
+                <div class="preview-img-wrapper">
+                  <img src="images/fingers/fingers-1.jpg" alt="Selected product grade preview" id="order-preview-img">
+                </div>
+                <div class="preview-details">
+                  <h4 id="order-preview-title">Turmeric Fingers</h4>
+                  <ul class="preview-specs-list" id="order-preview-specs">
+                    <li><span>Curcumin Content:</span> 3.5% to 5.0%</li>
+                    <li><span>Moisture Level:</span> Max 10%</li>
+                    <li><span>Packaging Standard:</span> 25kg / 50kg Jute Bags</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="order-group">
+                <label for="order-quantity">Quantity Needed (Metric Tons)</label>
+                <div class="quantity-input-wrapper">
+                  <input type="number" id="order-quantity" class="form-control-order" value="10" min="1" step="1">
+                </div>
+                <span class="min-order-note" id="min-order-note">Minimum order requirement: 10 MT</span>
+              </div>
+
+              <div class="order-group">
+                <label for="order-shipping">Shipping Term</label>
+                <select id="order-shipping" class="form-control-order">
+                  <option value="FOB" data-extra="0">FOB (Free On Board) - Base Price</option>
+                  <option value="CIF" data-extra="10000">CIF (Cost, Insurance &amp; Freight) - +₹10,000/MT</option>
+                  <option value="CFR" data-extra="8000">CFR (Cost &amp; Freight) - +₹8,000/MT</option>
+                </select>
+              </div>
+              
+              <!-- Live Invoice Quote Calculator Box -->
+              <div class="quote-calculator-box">
+                <div class="calc-row">
+                  <span>Unit Base Price:</span>
+                  <strong id="calc-unit-price">₹1,15,000 / MT</strong>
+                </div>
+                <div class="calc-row">
+                  <span>Shipping Add-on:</span>
+                  <strong id="calc-shipping-price">₹0 / MT</strong>
+                </div>
+                <div class="calc-row total">
+                  <span>Estimated Total (FOB):</span>
+                  <strong id="calc-total-price">₹11,50,000</strong>
+                </div>
+                <p class="calc-terms-note">*Quote is subject to commodity market changes and local container cargo freight availability. Final price sheets are locked upon draft agreement.</p>
+              </div>
+            </div>
+            
+            <!-- Right Panel: Buyer registration form -->
+            <div class="order-buyer-panel">
+              <h3 class="panel-subtitle"><i class="fa-regular fa-id-card"></i> 2. Buyer Profile &amp; Port</h3>
+              
+              <form id="order-submit-form" novalidate>
+                <div class="form-group">
+                  <label for="order-name">Authorized Contact Person <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+                    <input type="text" id="order-name" placeholder="John Doe" required>
+                  </div>
+                  <span class="error-msg" id="order-name-error">Contact person name is required.</span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="order-company">Registered Company Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <span class="input-icon"><i class="fa-regular fa-building"></i></span>
+                    <input type="text" id="order-company" placeholder="Spice Import Agencies LLC" required>
+                  </div>
+                  <span class="error-msg" id="order-company-error">Company name is required.</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="order-email">Corporate Email Address <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                      <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+                      <input type="email" id="order-email" placeholder="imports@spiceagency.com" required>
+                    </div>
+                    <span class="error-msg" id="order-email-error">Valid business email is required.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="order-phone">Phone Number (with Country Code) <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                      <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+                      <input type="tel" id="order-phone" placeholder="+1 (555) 234-5678" required>
+                    </div>
+                    <span class="error-msg" id="order-phone-error">Phone number is required.</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="order-port">Destination Discharge Port <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <span class="input-icon"><i class="fa-solid fa-anchor"></i></span>
+                    <input type="text" id="order-port" placeholder="Port of Hamburg, Germany (DEHAM)" required>
+                  </div>
+                  <span class="error-msg" id="order-port-error">Discharge port is required for custom quote calculations.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="order-message">Special Requirements / Custom Packaging Instructions</label>
+                  <div class="input-wrapper">
+                    <textarea id="order-message" rows="4" placeholder="Specify if you require custom container labels, phytosanitary certificates, private labeling, or split packaging sizes..."></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="order-submit-btn">
+                  Submit Bulk Order Request <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Success Receipt State (displays after successful submission) -->
+        <div id="order-success-state" style="display: none;">
+          <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h2 class="success-heading">Bulk Order Inquiry Registered</h2>
+          <p class="success-desc">Thank you for submitting your wholesale request. Your custom configuration has been logged under Quote reference ID: <strong id="order-ref-number">GCA-2026-98412</strong></p>
+          
+          <div class="invoice-summary-card">
+            <h4>Export Quotation Details</h4>
+            <div class="invoice-row">
+              <span>Selected Product Grade:</span>
+              <strong id="summary-product">Turmeric Fingers</strong>
+            </div>
+            <div class="invoice-row">
+              <span>Required Volume:</span>
+              <strong id="summary-quantity">10 Metric Tons</strong>
+            </div>
+            <div class="invoice-row">
+              <span>Shipping Terms:</span>
+              <strong id="summary-shipping">FOB</strong>
+            </div>
+            <div class="invoice-row">
+              <span>Discharge Destination Port:</span>
+              <strong id="summary-port">Port of Hamburg</strong>
+            </div>
+            <hr class="invoice-divider">
+            <div class="invoice-row total">
+              <span>Estimated Quote Value (INR):</span>
+              <strong id="summary-total">₹11,50,000</strong>
+            </div>
+          </div>
+          
+          <div class="invoice-next-steps">
+            <p><i class="fa-solid fa-circle-info"></i> **Next Steps:**</p>
+            <ul>
+              <li>A digital specification sheet containing lab test report samples and banking terms has been dispatched to your corporate email.</li>
+              <li>Our international sales manager will review container route schedules and email you a formalized contract draft within 12 business hours.</li>
+            </ul>
+          </div>
+          
+          <div class="action-buttons-group">
+            <button class="btn btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Invoice Quote</button>
+            <button class="btn btn-outline" id="order-success-reset-btn">Submit Another Configuration</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Footer Col 1 -->
+        <div class="footer-brand">
+          <a href="index.html#home" class="logo footer-logo">
+            <span class="logo-leaf"><i class="fa-solid fa-leaf"></i></span>
+            <span class="logo-text">GOLDEN<span>CANOPY</span></span>
+          </a>
+          <p class="footer-tagline-text">Supplying certified premium agricultural spice exports to global destinations, securing sustainable income for local farmers.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Col 2 -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Overview</a></li>
+            <li><a href="index.html#products">Our Products</a></li>
+            <li><a href="order.html">Order Page</a></li>
+            <li><a href="index.html#certification">Certifications</a></li>
+            <li><a href="index.html#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3 -->
+        <div class="footer-contact">
+          <h4>Export Inquiries</h4>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:divyas@goldencanopy.com">divyas@goldencanopy.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> +91 22 5557 8900</p>
+          <p><i class="fa-solid fa-globe"></i> Bangalore, Karnataka, India</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container text-center flex flex-between">
+        <p>&copy; 2026 Golden Canopy Agritech. All rights reserved. | Cultivating Purity, Exporting Excellence.</p>
+        <p class="security-text"><i class="fa-solid fa-shield-halved"></i> ISO 22000 Compliant Portal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Unified custom scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

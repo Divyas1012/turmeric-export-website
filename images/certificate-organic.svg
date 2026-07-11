@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bronze-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A88B4A" />
+      <stop offset="50%" stop-color="#E5C483" />
+      <stop offset="100%" stop-color="#917333" />
+    </linearGradient>
+    <linearGradient id="bg-grad-org" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF9F6" />
+      <stop offset="100%" stop-color="#EFECE3" />
+    </linearGradient>
+    <linearGradient id="org-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A6011" />
+      <stop offset="100%" stop-color="#558C1B" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad-org)" rx="10" />
+
+  <!-- Outer Border -->
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="url(#bronze-gold)" stroke-width="6" rx="8" />
+  <!-- Inner Thin Border -->
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#3A6011" stroke-width="1.5" rx="6" opacity="0.6" />
+
+  <!-- Corner Leaves Design -->
+  <g fill="#3A6011" opacity="0.15">
+    <!-- Top Left -->
+    <path d="M 35 35 Q 80 50, 90 90 Q 50 80, 35 35 Z" />
+    <path d="M 35 35 Q 50 80, 90 90 Q 80 50, 35 35 Z" />
+    <circle cx="50" cy="50" r="4" />
+    <!-- Top Right -->
+    <path d="M 765 35 Q 720 50, 710 90 Q 750 80, 765 35 Z" />
+    <path d="M 765 35 Q 750 80, 710 90 Q 720 50, 765 35 Z" />
+    <circle cx="750" cy="50" r="4" />
+    <!-- Bottom Left -->
+    <path d="M 35 565 Q 80 550, 90 510 Q 50 520, 35 565 Z" />
+    <circle cx="50" cy="500" r="4" />
+    <!-- Bottom Right -->
+    <path d="M 765 565 Q 720 550, 710 510 Q 750 520, 765 565 Z" />
+    <circle cx="750" cy="500" r="4" />
+  </g>
+
+  <!-- Header Banner -->
+  <path d="M 120 30 L 680 30 L 650 80 L 150 80 Z" fill="url(#org-green)" filter="url(#shadow)" />
+  <text x="400" y="62" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#FAF9F6" text-anchor="middle" letter-spacing="4">ORGANIC STANDARD CERTIFICATION</text>
+
+  <!-- Certificate Details -->
+  <text x="400" y="140" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" fill="#3A6011" text-anchor="middle">CERTIFICATE OF ORGANIC CONFORMITY</text>
+  
+  <text x="400" y="175" font-family="'Inter', sans-serif" font-size="12" fill="#555" text-anchor="middle" font-style="italic">This is to certify that the agricultural products produced by</text>
+
+  <!-- Company Name -->
+  <text x="400" y="215" font-family="'Outfit', sans-serif" font-weight="800" font-size="26" fill="#2C251E" text-anchor="middle">GOLDEN CANOPY AGRITECH</text>
+  <text x="400" y="235" font-family="'Inter', sans-serif" font-size="11" fill="#777" text-anchor="middle">Certified Organic Farm Cluster &amp; Processing Unit, India</text>
+
+  <!-- Verification Statement -->
+  <text x="400" y="275" font-family="'Inter', sans-serif" font-size="13" fill="#333" text-anchor="middle">Have been inspected and found to comply with the organic standards of</text>
+  
+  <!-- Standard Title -->
+  <rect x="230" y="295" width="340" height="40" fill="url(#org-green)" rx="5" />
+  <text x="400" y="321" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF" text-anchor="middle">NATIONAL PROGRAM FOR ORGANIC PRODUCTION (NPOP)</text>
+  <text x="400" y="352" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#3A6011" text-anchor="middle" letter-spacing="1">USDA ORGANIC &amp; NOP COMPLIANCE EQUIVALENT</text>
+
+  <!-- Scope -->
+  <text x="400" y="385" font-family="'Inter', sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="bold">Scope of Certification:</text>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">Cultivation, Processing, Storing, and Exporting of 100% Organic Turmeric</text>
+  <text x="400" y="420" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">with zero chemical pesticides, chemical fertilizers, or artificial additives.</text>
+
+  <line x1="150" y1="450" x2="650" y2="450" stroke="#A88B4A" stroke-width="1" opacity="0.5" />
+
+  <!-- Bottom Details (Dates & Signatures) -->
+  <!-- Left Column -->
+  <text x="150" y="480" font-family="'Inter', sans-serif" font-size="10" fill="#777">Certificate No: ORG-NPOP-382944</text>
+  <text x="150" y="498" font-family="'Inter', sans-serif" font-size="10" fill="#777">Inspection Date: 12th December 2025</text>
+  <text x="150" y="516" font-family="'Inter', sans-serif" font-size="10" fill="#777">Validity Period: 11th December 2026</text>
+
+  <!-- Center Gold Badge Seal -->
+  <g transform="translate(400, 500)" filter="url(#shadow)">
+    <!-- Ribbons -->
+    <path d="M -15 15 L -25 50 L 0 40 L 25 50 L 15 15 Z" fill="#A88B4A" />
+    <!-- Circle -->
+    <circle r="30" fill="url(#bronze-gold)" stroke="#917333" stroke-width="1.5" />
+    <circle r="26" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <!-- Organic Leaf Emblem inside seal -->
+    <path d="M 0 -15 Q 12 -5, 0 15 Q -12 -5, 0 -15 Z" fill="#3A6011" />
+    <path d="M 0 -15 L 0 15" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+    <text x="0" y="24" font-family="'Outfit', sans-serif" font-weight="800" font-size="6" fill="#FFFFFF" text-anchor="middle">100% ORGANIC</text>
+  </g>
+
+  <!-- Right Column (Signature) -->
+  <g transform="translate(580, 470)">
+    <!-- Signature Line Graphic -->
+    <path d="M 15 18 Q 35 0, 55 18 T 95 10 T 120 18" fill="none" stroke="#2C251E" stroke-width="1.5" />
+    <line x1="0" y1="25" x2="130" y2="25" stroke="#777" stroke-width="0.8" />
+    <text x="65" y="38" font-family="'Inter', sans-serif" font-size="9" fill="#555" text-anchor="middle" font-weight="bold">Lead Inspector</text>
+    <text x="65" y="48" font-family="'Inter', sans-serif" font-size="8" fill="#777" text-anchor="middle">Organic Certifying Agency</text>
+  </g>
+</svg>

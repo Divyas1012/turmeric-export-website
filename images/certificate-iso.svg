@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059" />
+      <stop offset="30%" stop-color="#FDF0CD" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#F3E5AB" />
+      <stop offset="100%" stop-color="#A67C1E" />
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7" />
+      <stop offset="100%" stop-color="#F4EFE6" />
+    </linearGradient>
+    <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#143216" />
+      <stop offset="100%" stop-color="#2D5A30" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)" rx="10" />
+
+  <!-- Outer Border -->
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="url(#gold-grad)" stroke-width="6" rx="8" />
+  <!-- Inner Thin Border -->
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#1E4620" stroke-width="1.5" rx="6" opacity="0.6" />
+
+  <!-- Security Guilloche Pattern Mockup (Corners) -->
+  <g stroke="url(#gold-grad)" fill="none" opacity="0.25" stroke-width="0.8">
+    <!-- Top Left -->
+    <path d="M 30 100 C 60 100, 100 60, 100 30" />
+    <path d="M 30 110 C 70 110, 110 70, 110 30" />
+    <path d="M 30 120 C 80 120, 120 80, 120 30" />
+    <!-- Top Right -->
+    <path d="M 770 100 C 740 100, 700 60, 700 30" />
+    <path d="M 770 110 C 730 110, 690 70, 690 30" />
+    <path d="M 770 120 C 720 120, 680 80, 680 30" />
+    <!-- Bottom Left -->
+    <path d="M 30 500 C 60 500, 100 540, 100 570" />
+    <path d="M 30 490 C 70 490, 110 530, 110 570" />
+    <path d="M 30 480 C 80 480, 120 520, 120 570" />
+    <!-- Bottom Right -->
+    <path d="M 770 500 C 740 500, 700 540, 700 570" />
+    <path d="M 770 490 C 730 490, 690 530, 690 570" />
+    <path d="M 770 480 C 720 480, 680 520, 680 570" />
+  </g>
+
+  <!-- Header Banner -->
+  <path d="M 120 30 L 680 30 L 650 80 L 150 80 Z" fill="url(#green-grad)" filter="url(#shadow)" />
+  <text x="400" y="62" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#E5A93B" text-anchor="middle" letter-spacing="4">INTERNATIONAL STANDARD</text>
+
+  <!-- Certificate Details -->
+  <text x="400" y="140" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" fill="#1E4620" text-anchor="middle">CERTIFICATE OF REGISTRATION</text>
+  
+  <text x="400" y="175" font-family="'Inter', sans-serif" font-size="12" fill="#555" text-anchor="middle" font-style="italic">This is to certify that the Quality &amp; Food Safety Management System of</text>
+
+  <!-- Company Name -->
+  <text x="400" y="215" font-family="'Outfit', sans-serif" font-weight="800" font-size="26" fill="#2C251E" text-anchor="middle">GOLDEN CANOPY AGRITECH</text>
+  <text x="400" y="235" font-family="'Inter', sans-serif" font-size="10" fill="#777" text-anchor="middle">AYYAPPA NAGAR, K.R. PURAM, BANGALORE, INDIA</text>
+
+  <!-- Verification Statement -->
+  <text x="400" y="275" font-family="'Inter', sans-serif" font-size="13" fill="#333" text-anchor="middle">Has been audited and found to meet the requirements of standard</text>
+  
+  <!-- Standard Title -->
+  <rect x="250" y="295" width="300" height="40" fill="url(#green-grad)" rx="5" />
+  <text x="400" y="321" font-family="'Outfit', sans-serif" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle">ISO 22000 : 2018</text>
+  <text x="400" y="352" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#1E4620" text-anchor="middle" letter-spacing="1">FOOD SAFETY MANAGEMENT SYSTEM</text>
+
+  <!-- Scope -->
+  <text x="400" y="385" font-family="'Inter', sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="bold">Scope of Certification:</text>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">Processing, Packaging and Global Export of Premium Quality Turmeric Fingers,</text>
+  <text x="400" y="420" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">Turmeric Powder, and Organic Turmeric Products.</text>
+
+  <line x1="150" y1="450" x2="650" y2="450" stroke="#E5A93B" stroke-width="1" opacity="0.5" />
+
+  <!-- Bottom Details (Dates & Signatures) -->
+  <!-- Left Column -->
+  <text x="150" y="480" font-family="'Inter', sans-serif" font-size="10" fill="#777">Certificate No: AE-IND-2200984</text>
+  <text x="150" y="498" font-family="'Inter', sans-serif" font-size="10" fill="#777">Date of Issue: 18th January 2025</text>
+  <text x="150" y="516" font-family="'Inter', sans-serif" font-size="10" fill="#777">Expiry Date: 17th January 2028</text>
+
+  <!-- Center Gold Badge Seal -->
+  <g transform="translate(400, 500)" filter="url(#shadow)">
+    <!-- Ribbons -->
+    <path d="M -15 15 L -25 50 L 0 40 L 25 50 L 15 15 Z" fill="#C5A059" />
+    <path d="M -25 15 L -40 45 L -15 38 L 5 45 L -5 15 Z" fill="#A67C1E" opacity="0.8" />
+    <!-- Circle -->
+    <circle r="30" fill="url(#gold-grad)" stroke="#A67C1E" stroke-width="1.5" />
+    <circle r="26" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3,3" />
+    <text x="0" y="4" font-family="'Outfit', sans-serif" font-weight="800" font-size="10" fill="#1E4620" text-anchor="middle">ISO SECURE</text>
+  </g>
+
+  <!-- Right Column (Signature) -->
+  <g transform="translate(580, 470)">
+    <!-- Signature Line Graphic -->
+    <path d="M 10 20 Q 30 -5, 50 15 T 90 5 T 120 15" fill="none" stroke="#2C251E" stroke-width="1.5" />
+    <line x1="0" y1="25" x2="130" y2="25" stroke="#777" stroke-width="0.8" />
+    <text x="65" y="38" font-family="'Inter', sans-serif" font-size="9" fill="#555" text-anchor="middle" font-weight="bold">Authorized Signatory</text>
+    <text x="65" y="48" font-family="'Inter', sans-serif" font-size="8" fill="#777" text-anchor="middle">Global Certification Board</text>
+  </g>
+</svg>

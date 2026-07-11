@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="silver-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80A590" />
+      <stop offset="50%" stop-color="#E1EDE6" />
+      <stop offset="100%" stop-color="#4C705B" />
+    </linearGradient>
+    <linearGradient id="bg-grad-gap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFBF9" />
+      <stop offset="100%" stop-color="#EEF2EF" />
+    </linearGradient>
+    <linearGradient id="gap-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E545B" />
+      <stop offset="100%" stop-color="#197D87" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-grad-gap)" rx="10" />
+
+  <!-- Outer Border -->
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="url(#silver-gold)" stroke-width="6" rx="8" />
+  <!-- Inner Thin Border -->
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#0E545B" stroke-width="1.5" rx="6" opacity="0.6" />
+
+  <!-- Corner Leaves Design -->
+  <g fill="#0E545B" opacity="0.15" stroke="none">
+    <!-- Concentric corner arcs representing global standards -->
+    <circle cx="30" cy="30" r="40" fill="none" stroke="url(#silver-gold)" stroke-width="2" />
+    <circle cx="30" cy="30" r="60" fill="none" stroke="url(#silver-gold)" stroke-width="1" />
+    <circle cx="770" cy="30" r="40" fill="none" stroke="url(#silver-gold)" stroke-width="2" />
+    <circle cx="770" cy="30" r="60" fill="none" stroke="url(#silver-gold)" stroke-width="1" />
+    <circle cx="30" cy="570" r="40" fill="none" stroke="url(#silver-gold)" stroke-width="2" />
+    <circle cx="770" cy="570" r="40" fill="none" stroke="url(#silver-gold)" stroke-width="2" />
+  </g>
+
+  <!-- Header Banner -->
+  <path d="M 120 30 L 680 30 L 650 80 L 150 80 Z" fill="url(#gap-blue)" filter="url(#shadow)" />
+  <text x="400" y="62" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">GOOD AGRICULTURAL PRACTICES</text>
+
+  <!-- Certificate Details -->
+  <text x="400" y="140" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" fill="#0E545B" text-anchor="middle">GLOBALG.A.P. COMPLIANCE</text>
+  
+  <text x="400" y="175" font-family="'Inter', sans-serif" font-size="12" fill="#555" text-anchor="middle" font-style="italic">This is to certify that the agricultural production process of</text>
+
+  <!-- Company Name -->
+  <text x="400" y="215" font-family="'Outfit', sans-serif" font-weight="800" font-size="26" fill="#2C251E" text-anchor="middle">GOLDEN CANOPY AGRITECH</text>
+  <text x="400" y="235" font-family="'Inter', sans-serif" font-size="11" fill="#777" text-anchor="middle">GGN: 4063651992015 | Certified Agricultural Farm Units, India</text>
+
+  <!-- Verification Statement -->
+  <text x="400" y="275" font-family="'Inter', sans-serif" font-size="13" fill="#333" text-anchor="middle">Has been assessed and found to comply with the standard system</text>
+  
+  <!-- Standard Title -->
+  <rect x="230" y="295" width="340" height="40" fill="url(#gap-blue)" rx="5" />
+  <text x="400" y="321" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF" text-anchor="middle">GLOBALG.A.P. IFA Version 6.0</text>
+  <text x="400" y="352" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#0E545B" text-anchor="middle" letter-spacing="1">INTEGRATED FARM ASSURANCE - CROPS BASE</text>
+
+  <!-- Scope -->
+  <text x="400" y="385" font-family="'Inter', sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="bold">Scope of Certification:</text>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">Good Agricultural Practices for Cultivation, Harvest, and Post-Harvest Handling</text>
+  <text x="400" y="420" font-family="'Inter', sans-serif" font-size="12" fill="#2C251E" text-anchor="middle">of Turmeric (Curcuma longa) intended for Global Export Markets.</text>
+
+  <line x1="150" y1="450" x2="650" y2="450" stroke="#80A590" stroke-width="1" opacity="0.5" />
+
+  <!-- Bottom Details (Dates & Signatures) -->
+  <!-- Left Column -->
+  <text x="150" y="480" font-family="'Inter', sans-serif" font-size="10" fill="#777">GlobalG.A.P. Number: GGN-4063651</text>
+  <text x="150" y="498" font-family="'Inter', sans-serif" font-size="10" fill="#777">Certification Date: 05th November 2025</text>
+  <text x="150" y="516" font-family="'Inter', sans-serif" font-size="10" fill="#777">Valid From / To: 05 Nov 2025 - 04 Nov 2026</text>
+
+  <!-- Center Gold Badge Seal -->
+  <g transform="translate(400, 500)" filter="url(#shadow)">
+    <!-- Ribbons -->
+    <path d="M -15 15 L -25 50 L 0 40 L 25 50 L 15 15 Z" fill="#4C705B" />
+    <!-- Circle -->
+    <circle r="30" fill="url(#silver-gold)" stroke="#4C705B" stroke-width="1.5" />
+    <circle r="26" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <!-- Globe Emblem inside seal -->
+    <circle r="12" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M -12 0 L 12 0" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M 0 -12 L 0 12" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M -9 -9 Q 0 0, -9 9" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M 9 -9 Q 0 0, 9 9" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <text x="0" y="24" font-family="'Outfit', sans-serif" font-weight="800" font-size="6" fill="#FFFFFF" text-anchor="middle">GLOBAL COMPLIANT</text>
+  </g>
+
+  <!-- Right Column (Signature) -->
+  <g transform="translate(580, 470)">
+    <!-- Signature Line Graphic -->
+    <path d="M 12 21 Q 32 -3, 52 21 T 92 10 T 122 21" fill="none" stroke="#2C251E" stroke-width="1.5" />
+    <line x1="0" y1="25" x2="130" y2="25" stroke="#777" stroke-width="0.8" />
+    <text x="65" y="38" font-family="'Inter', sans-serif" font-size="9" fill="#555" text-anchor="middle" font-weight="bold">Scheme Manager</text>
+    <text x="65" y="48" font-family="'Inter', sans-serif" font-size="8" fill="#777" text-anchor="middle">International Certification body</text>
+  </g>
+</svg>
